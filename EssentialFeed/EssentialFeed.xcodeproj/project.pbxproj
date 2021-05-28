@@ -63,9 +63,9 @@
 		D52BB1812660BFB800018AD4 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
-				D52BB1832660C04100018AD4 /* RemoteFeedLoader.swift */,
-				D52BB19326616B6500018AD4 /* HTTPClient.swift */,
 				D52BB19726616BB600018AD4 /* FeedItemsMapper.swift */,
+				D52BB19326616B6500018AD4 /* HTTPClient.swift */,
+				D52BB1832660C04100018AD4 /* RemoteFeedLoader.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
