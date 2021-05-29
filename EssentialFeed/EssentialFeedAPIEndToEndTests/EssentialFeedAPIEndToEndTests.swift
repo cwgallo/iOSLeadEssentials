@@ -11,21 +11,7 @@ import EssentialFeed
 class EssentialFeedAPIEndToEndTests: XCTestCase {
 
     func test_endToEndTestServerGETFeedResult_matchesFixedTestAccountData() {
-        let testServerURL = URL(string: "https://essentialdeveloper.com/feed-case-study/test-api/feed")!
-        let client = URLSessionHTTPClient()
-        let loader = RemoteFeedLoader(url: testServerURL, client: client)
-        
-        let exp = expectation(description: "wait for load completion")
-        
-        var receivedResult: LoadFeedResult?
-        loader.load { result in
-            receivedResult = result
-            exp.fulfill()
-        }
-        
-        wait(for: [exp], timeout: 5.0)
-        
-        switch receivedResult {
+        switch getFeedResult() {
         case let .success(items)?:
             XCTAssertEqual(items.count, 8, "Expected 8 items in the test account feed")
             XCTAssertEqual(items[0], expectedItem(at: 0))
@@ -43,15 +29,28 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
             XCTFail("Expected successful feed result, got no result instead")
         }
     }
-    
-    func test_() {
         
-    }
-    
     // MARK: - Helpers
     
     func expectedItem(at index: Int) -> FeedItem {
         FeedItem(id: id(at: index), description: description(at: index), location: location(at: index), imageURL: imageURL(at: index))
+    }
+    
+    func getFeedResult() -> LoadFeedResult? {
+        let testServerURL = URL(string: "https://essentialdeveloper.com/feed-case-study/test-api/feed")!
+        let client = URLSessionHTTPClient()
+        let loader = RemoteFeedLoader(url: testServerURL, client: client)
+        
+        let exp = expectation(description: "wait for load completion")
+        
+        var receivedResult: LoadFeedResult?
+        loader.load { result in
+            receivedResult = result
+            exp.fulfill()
+        }
+        
+        wait(for: [exp], timeout: 5.0)
+        return receivedResult
     }
     
     func id(at index: Int) -> UUID {
