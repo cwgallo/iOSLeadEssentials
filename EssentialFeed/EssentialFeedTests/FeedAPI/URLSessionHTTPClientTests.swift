@@ -40,12 +40,8 @@ class URLSessionHTTPClientTests: XCTestCase {
     func test_getFromURL_failsOnRequestError() {
         let requestError = anyNSError()
         let receivedError = resultErrorFor(data: nil, response: nil, error: requestError)
-        // Only checking domain and code for now
         XCTAssertEqual((receivedError as NSError?)?.domain, requestError.domain)
         XCTAssertEqual((receivedError as NSError?)?.code, requestError.code)
-        
-        // Waiting on response from Mike & Caio for why the userInfo dictionary is being added behind the scenes
-//        XCTAssertEqual(receivedError as NSError?, requestError)
     }
     
     func test_getFromURL_failsOnAllNilValues() {
