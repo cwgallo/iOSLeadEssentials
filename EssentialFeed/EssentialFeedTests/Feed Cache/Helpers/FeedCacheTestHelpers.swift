@@ -32,7 +32,7 @@ extension Date {
     }
 }
 
-extension Date {    
+extension Date {
     func adding(seconds: TimeInterval) -> Date {
         self + seconds
     }
