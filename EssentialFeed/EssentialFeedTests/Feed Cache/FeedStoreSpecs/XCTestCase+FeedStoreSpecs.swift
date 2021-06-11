@@ -123,7 +123,12 @@ extension FeedStoreSpecs where Self: XCTestCase {
         let exp = expectation(description: "wait for cache insertion")
         var insertionError: Error?
         sut.insert(cache.feed, timestamp: cache.timestamp) { receivedInsertionError in
-            insertionError = receivedInsertionError
+            switch receivedInsertionError {
+            case .success:
+                break
+            case let .failure(error):
+                insertionError = error
+            }
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1.0)
@@ -135,7 +140,12 @@ extension FeedStoreSpecs where Self: XCTestCase {
         let exp = expectation(description: "Wait for cache deletion")
         var deletionError: Error?
         sut.deleteCachedFeed { receivedDeletionError in
-            deletionError = receivedDeletionError
+            switch receivedDeletionError {
+            case .success:
+                break
+            case let .failure(error):
+                deletionError = error
+            }            
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1.0)
