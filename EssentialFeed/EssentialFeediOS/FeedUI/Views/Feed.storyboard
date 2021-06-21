@@ -76,6 +76,9 @@
                                                             <state key="normal" title="↻">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="yMm-Xp-kOf" eventType="touchUpInside" id="Dfc-20-YfS"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -117,6 +120,14 @@
                                         <constraint firstItem="Pql-gK-BYy" firstAttribute="trailing" secondItem="2gH-eR-tUt" secondAttribute="trailingMargin" id="swp-rt-4CJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="gt5-AN-All" id="CTT-DW-ogx"/>
+                                    <outlet property="feedImageContainer" destination="mkH-f8-OV7" id="HtK-uy-EI6"/>
+                                    <outlet property="feedImageRetryButton" destination="uJW-vu-fVG" id="H5W-5a-aHH"/>
+                                    <outlet property="feedImageView" destination="eZC-6l-SYy" id="mBp-PB-dPQ"/>
+                                    <outlet property="locationContainer" destination="oso-aV-SqT" id="KVs-MF-DYu"/>
+                                    <outlet property="locationLabel" destination="3uF-ya-h6d" id="OL2-5k-AtM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -135,7 +146,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJj-Cp-q9k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942.02898550724649" y="76.339285714285708"/>
+            <point key="canvasLocation" x="530" y="70"/>
         </scene>
     </scenes>
     <resources>
