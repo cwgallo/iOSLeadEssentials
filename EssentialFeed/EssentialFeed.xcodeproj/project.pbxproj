@@ -150,6 +150,7 @@
 		D55FAB64278E44AF00DD39C2 /* FeedUIIntegrationTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+LoaderSpy.swift"; sourceTree = "<group>"; };
 		D55FAB67278E45A300DD39C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		D55FAB69278E45EB00DD39C2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		D55FAB6A278E463100DD39C2 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		D5715A82267DD6AB00E28483 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		D5715A86267DDD9D00E28483 /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
 		D5715A89267DE11800E28483 /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
@@ -707,6 +708,7 @@
 				en,
 				Base,
 				"pt-BR",
+				el,
 			);
 			mainGroup = D59CCA1A2660A15500B20FF6;
 			productRefGroup = D59CCA252660A15500B20FF6 /* Products */;
@@ -909,6 +911,7 @@
 			children = (
 				D55FAB67278E45A300DD39C2 /* en */,
 				D55FAB69278E45EB00DD39C2 /* pt-BR */,
+				D55FAB6A278E463100DD39C2 /* el */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";
