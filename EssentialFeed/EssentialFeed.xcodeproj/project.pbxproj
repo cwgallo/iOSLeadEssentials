@@ -563,9 +563,9 @@
 		D59CCA312660A15600B20FF6 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				D52BB1A22661F3A900018AD4 /* Helpers */,
-				D52BB82F2668A35800018AD4 /* Feed Cache */,
 				D52BB19B266173B300018AD4 /* Feed API */,
+				D52BB82F2668A35800018AD4 /* Feed Cache */,
+				D52BB1A22661F3A900018AD4 /* Helpers */,
 				D59CCA342660A15600B20FF6 /* Info.plist */,
 			);
 			path = EssentialFeedTests;
