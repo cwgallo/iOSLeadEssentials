@@ -127,9 +127,8 @@ class EssentialFeedCacheIntegrationTests: XCTestCase {
     }
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> LocalFeedLoader {
-        let storeBundle = Bundle(for: CoreDataFeedStore.self)
         let storeURL = testSpecificStoreURL()
-        let store = try! CoreDataFeedStore(storeURL: storeURL, bundle: storeBundle)
+        let store = try! CoreDataFeedStore(storeURL: storeURL)
         let sut = LocalFeedLoader(store: store, currentDate: Date.init)
         trackForMemoryLeaks(store, file: file, line: line)
         trackForMemoryLeaks(sut, file: file, line: line)
@@ -156,7 +155,7 @@ class EssentialFeedCacheIntegrationTests: XCTestCase {
     private func save(_ feed: [FeedImage], with loader: LocalFeedLoader, file: StaticString = #file, line: UInt = #line) {
         let saveExp = expectation(description: "Wait for save completion")
         loader.save(feed) { saveError in
-            if case let Result.failure(error) = result {
+            if case let Result.failure(error) = saveError {
                 XCTFail("Expected to save feed successfully, got error: \(error)", file: file, line: line)
             }
             saveExp.fulfill()
