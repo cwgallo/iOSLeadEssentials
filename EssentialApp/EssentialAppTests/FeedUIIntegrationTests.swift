@@ -5,10 +5,12 @@
 //  Created by Chad Galloway on 6/18/21.
 //
 
+import XCTest
+import UIKit
+import EssentialApp
 import EssentialFeed
 import EssentialFeediOS
-import UIKit
-import XCTest
+
 
 final class FeedUIIntegrationTests: XCTestCase {
     
