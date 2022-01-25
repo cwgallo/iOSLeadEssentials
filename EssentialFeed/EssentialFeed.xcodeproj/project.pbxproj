@@ -89,6 +89,7 @@
 		D5BF9A872669EAE000DCBA50 /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF9A862669EAE000DCBA50 /* LocalFeedLoader.swift */; };
 		D5BF9A8C2669EB6400DCBA50 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF9A8B2669EB6400DCBA50 /* FeedStore.swift */; };
 		D5C8CCE927A0090800D21313 /* FeedSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8CCE827A0090800D21313 /* FeedSnapshotTests.swift */; };
+		D5C8CCEC27A00FB800D21313 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8CCEB27A00FB800D21313 /* UIImage+TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +230,7 @@
 		D5BF9A862669EAE000DCBA50 /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		D5BF9A8B2669EB6400DCBA50 /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		D5C8CCE827A0090800D21313 /* FeedSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSnapshotTests.swift; sourceTree = "<group>"; };
+		D5C8CCEB27A00FB800D21313 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,6 +502,7 @@
 		D59A9489267C696900D4A472 /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				D5C8CCEA27A00F9700D21313 /* Helpers */,
 				D59A948C267C696900D4A472 /* Info.plist */,
 				D5C8CCE827A0090800D21313 /* FeedSnapshotTests.swift */,
 			);
@@ -577,6 +580,14 @@
 				D57646A5279796E5001F7491 /* LocalFeedImageDataLoader.swift */,
 			);
 			path = "Feed Cache";
+			sourceTree = "<group>";
+		};
+		D5C8CCEA27A00F9700D21313 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D5C8CCEB27A00FB800D21313 /* UIImage+TestHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -857,6 +868,7 @@
 			files = (
 				D59A949C267C744500D4A472 /* XCTTestCase+MemoryLeakTracking.swift in Sources */,
 				D5C8CCE927A0090800D21313 /* FeedSnapshotTests.swift in Sources */,
+				D5C8CCEC27A00FB800D21313 /* UIImage+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
