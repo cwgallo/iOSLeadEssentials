@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D55DBA4827A3BE4700FF4540 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA4727A3BE4700FF4540 /* CombineHelpers.swift */; };
 		D57391FA2798DB5300262216 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57391F92798DB5300262216 /* XCTestCase+MemoryLeakTracking.swift */; };
 		D57391FC2798DBA500262216 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57391FB2798DBA500262216 /* SharedTestHelpers.swift */; };
 		D5739200279926C000262216 /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57391FF279926C000262216 /* FeedLoaderStub.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D55DBA4727A3BE4700FF4540 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		D57391F92798DB5300262216 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		D57391FB2798DBA500262216 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		D57391FF279926C000262216 /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				D57646C42797C85D001F7491 /* Assets.xcassets */,
 				D57646C62797C85D001F7491 /* LaunchScreen.storyboard */,
 				D57646C12797C85C001F7491 /* Main.storyboard */,
+				D55DBA4727A3BE4700FF4540 /* CombineHelpers.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			files = (
 				D5C8CCCF279FEADF00D21313 /* FeedUIComposer.swift in Sources */,
 				D57646C02797C85C001F7491 /* ViewController.swift in Sources */,
+				D55DBA4827A3BE4700FF4540 /* CombineHelpers.swift in Sources */,
 				D57646BC2797C85C001F7491 /* AppDelegate.swift in Sources */,
 				D5C8CCCD279FEADF00D21313 /* FeedViewAdapter.swift in Sources */,
 				D57646BE2797C85C001F7491 /* SceneDelegate.swift in Sources */,
