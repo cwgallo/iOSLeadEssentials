@@ -19,8 +19,6 @@
 		D55DBA4A27A3C41A00FF4540 /* ImageCommentsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA4927A3C41A00FF4540 /* ImageCommentsMapperTests.swift */; };
 		D55DBA4E27A3C5E900FF4540 /* ImageCommentsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA4D27A3C5E900FF4540 /* ImageCommentsMapper.swift */; };
 		D55DBA5127A3CB3D00FF4540 /* ImageComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA5027A3CB3D00FF4540 /* ImageComment.swift */; };
-		D55DBA5C27A3D64500FF4540 /* RemoteLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA5B27A3D64500FF4540 /* RemoteLoaderTests.swift */; };
-		D55DBA5E27A3D70700FF4540 /* RemoteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA5D27A3D70700FF4540 /* RemoteLoader.swift */; };
 		D5715A87267DDD9D00E28483 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5715A86267DDD9D00E28483 /* FeedImageCellController.swift */; };
 		D5715A9626805A8E00E28483 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5715A9526805A8E00E28483 /* Feed.storyboard */; };
 		D5715A9826805B3100E28483 /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5715A9726805B3100E28483 /* Feed.xcassets */; };
@@ -161,8 +159,6 @@
 		D55DBA4927A3C41A00FF4540 /* ImageCommentsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsMapperTests.swift; sourceTree = "<group>"; };
 		D55DBA4D27A3C5E900FF4540 /* ImageCommentsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsMapper.swift; sourceTree = "<group>"; };
 		D55DBA5027A3CB3D00FF4540 /* ImageComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComment.swift; sourceTree = "<group>"; };
-		D55DBA5B27A3D64500FF4540 /* RemoteLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoaderTests.swift; sourceTree = "<group>"; };
-		D55DBA5D27A3D70700FF4540 /* RemoteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoader.swift; sourceTree = "<group>"; };
 		D55FAB6C278E46B400DD39C2 /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
 		D5715A82267DD6AB00E28483 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		D5715A86267DDD9D00E28483 /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
@@ -369,7 +365,6 @@
 			isa = PBXGroup;
 			children = (
 				D52BB19326616B6500018AD4 /* HTTPClient.swift */,
-				D55DBA5D27A3D70700FF4540 /* RemoteLoader.swift */,
 			);
 			path = "Shared API";
 			sourceTree = "<group>";
@@ -386,7 +381,6 @@
 			isa = PBXGroup;
 			children = (
 				D55DBA5527A3D17E00FF4540 /* Helpers */,
-				D55DBA5B27A3D64500FF4540 /* RemoteLoaderTests.swift */,
 			);
 			path = "Shared API";
 			sourceTree = "<group>";
@@ -975,7 +969,6 @@
 				D576468127976F4C001F7491 /* FeedPresenter.swift in Sources */,
 				D52BB1AA2662075C00018AD4 /* URLSessionHTTPClient.swift in Sources */,
 				D57646992797917A001F7491 /* HTTPURLResponse+StatusCode.swift in Sources */,
-				D55DBA5E27A3D70700FF4540 /* RemoteLoader.swift in Sources */,
 				D55DBA5127A3CB3D00FF4540 /* ImageComment.swift in Sources */,
 				D59A93EA2670BBF800D4A472 /* ManagedCache.swift in Sources */,
 				D59A93E02670AEB700D4A472 /* CoreDataFeedStore.swift in Sources */,
@@ -1014,7 +1007,6 @@
 				D59A93D52670A98700D4A472 /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */,
 				D59A93C0266F485100D4A472 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				D59A93D12670A54400D4A472 /* FeedStoreSpecs.swift in Sources */,
-				D55DBA5C27A3D64500FF4540 /* RemoteLoaderTests.swift in Sources */,
 				D57646AC279797D1001F7491 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */,
 				D52BB1A42661F3E700018AD4 /* XCTTestCase+MemoryLeakTracking.swift in Sources */,
 				D57646AA2797977B001F7491 /* CoreDataFeedImageDataStoreTests.swift in Sources */,
@@ -1152,7 +1144,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EssentialFeediOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1179,7 +1171,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EssentialFeediOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1292,7 +1284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1352,7 +1344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1376,7 +1368,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EssentialFeed/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1403,7 +1395,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EssentialFeed/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
