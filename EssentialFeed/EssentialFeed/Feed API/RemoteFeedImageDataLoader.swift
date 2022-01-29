@@ -1,5 +1,5 @@
 //
-//  RemoteFeedImageDataLoader.swift
+//  FeedImageDataMapper.swift
 //  EssentialFeed
 //
 //  Created by Chad Galloway on 1/18/22.
