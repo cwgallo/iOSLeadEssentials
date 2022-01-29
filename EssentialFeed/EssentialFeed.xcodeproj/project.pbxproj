@@ -22,6 +22,8 @@
 		D55DBA6027A516BC00FF4540 /* FeedImageDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA5F27A516BC00FF4540 /* FeedImageDataMapper.swift */; };
 		D55DBA6327A51ED200FF4540 /* LoadResourcePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA6227A51ED200FF4540 /* LoadResourcePresenterTests.swift */; };
 		D55DBA6627A51FA700FF4540 /* LoadResourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA6527A51FA700FF4540 /* LoadResourcePresenter.swift */; };
+		D55DBA6927A5279600FF4540 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = D55DBA6B27A5279600FF4540 /* Shared.strings */; };
+		D55DBA6F27A5296B00FF4540 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA6E27A5296B00FF4540 /* SharedLocalizationTests.swift */; };
 		D5715A87267DDD9D00E28483 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5715A86267DDD9D00E28483 /* FeedImageCellController.swift */; };
 		D5715A9626805A8E00E28483 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5715A9526805A8E00E28483 /* Feed.storyboard */; };
 		D5715A9826805B3100E28483 /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5715A9726805B3100E28483 /* Feed.xcassets */; };
@@ -162,6 +164,10 @@
 		D55DBA5F27A516BC00FF4540 /* FeedImageDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataMapper.swift; sourceTree = "<group>"; };
 		D55DBA6227A51ED200FF4540 /* LoadResourcePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenterTests.swift; sourceTree = "<group>"; };
 		D55DBA6527A51FA700FF4540 /* LoadResourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenter.swift; sourceTree = "<group>"; };
+		D55DBA6A27A5279600FF4540 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Shared.strings; sourceTree = "<group>"; };
+		D55DBA6C27A5279900FF4540 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Shared.strings; sourceTree = "<group>"; };
+		D55DBA6D27A5279B00FF4540 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Shared.strings"; sourceTree = "<group>"; };
+		D55DBA6E27A5296B00FF4540 /* SharedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTests.swift; sourceTree = "<group>"; };
 		D55FAB6C278E46B400DD39C2 /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
 		D5715A82267DD6AB00E28483 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		D5715A86267DDD9D00E28483 /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
@@ -405,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				D55DBA6227A51ED200FF4540 /* LoadResourcePresenterTests.swift */,
+				D55DBA6E27A5296B00FF4540 /* SharedLocalizationTests.swift */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -413,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				D55DBA6527A51FA700FF4540 /* LoadResourcePresenter.swift */,
+				D55DBA6B27A5279600FF4540 /* Shared.strings */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -884,6 +892,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D576468227977091001F7491 /* Feed.strings in Resources */,
+				D55DBA6927A5279600FF4540 /* Shared.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,6 +1010,7 @@
 				D59A93C9266F618D00D4A472 /* SharedTestHelpers.swift in Sources */,
 				D5764696279790CE001F7491 /* FeedImageDataMapperTests.swift in Sources */,
 				D52BB8372668A37900018AD4 /* CacheFeedUseCaseTests.swift in Sources */,
+				D55DBA6F27A5296B00FF4540 /* SharedLocalizationTests.swift in Sources */,
 				D59A93DC2670AC4200D4A472 /* CoreDataFeedStoreTests.swift in Sources */,
 				D59A93D92670AA5800D4A472 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
 				D59A93D52670A98700D4A472 /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */,
@@ -1046,6 +1056,16 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D55DBA6B27A5279600FF4540 /* Shared.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D55DBA6A27A5279600FF4540 /* en */,
+				D55DBA6C27A5279900FF4540 /* el */,
+				D55DBA6D27A5279B00FF4540 /* pt-BR */,
+			);
+			name = Shared.strings;
+			sourceTree = "<group>";
+		};
 		D576467C27976DA2001F7491 /* Feed.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
