@@ -367,7 +367,6 @@
 		D51DBD2727A65DAC00CC2024 /* Shared UI */ = {
 			isa = PBXGroup;
 			children = (
-				D51DBD6227A72F3100CC2024 /* New Group */,
 				D51DBD2927A65DCE00CC2024 /* Views */,
 				D51DBD2827A65DBB00CC2024 /* Controllers */,
 			);
@@ -484,13 +483,6 @@
 				D51DBD5527A6699A00CC2024 /* IMAGE_COMMENTS_light.png */,
 			);
 			path = snapshots;
-			sourceTree = "<group>";
-		};
-		D51DBD6227A72F3100CC2024 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D52BB1812660BFB800018AD4 /* Feed API */ = {
