@@ -91,7 +91,6 @@
                     </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJj-Cp-q9k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="cgw-T5-VrR"/>
             </objects>
             <point key="canvasLocation" x="528.98550724637687" y="69.642857142857139"/>
         </scene>
