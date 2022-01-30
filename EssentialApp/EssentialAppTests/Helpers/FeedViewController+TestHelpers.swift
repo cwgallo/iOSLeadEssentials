@@ -41,13 +41,17 @@ extension ListViewController {
         let index = IndexPath(row: row, section: feedImagesSection)
         ds?.tableView?(tableView, cancelPrefetchingForRowsAt: [index])
     }
-    
+        
     func renderedFeedImageData(at index: Int) -> Data? {
         simulateFeedImageViewVisible(at: index)?.renderedImage
     }
     
+    func simulateErrorViewTap() {
+        errorView.simulateTap()
+    }
+    
     var errorMessage: String? {
-         return errorView?.message
+         return errorView.message
      }
 
     var isShowingLoadingIndicator: Bool {
