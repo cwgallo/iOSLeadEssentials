@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D51DBD6E27A79A0900CC2024 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DBD6D27A79A0900CC2024 /* CommentsUIIntegrationTests.swift */; };
+		D51DBD7027A79BBF00CC2024 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DBD6F27A79BBF00CC2024 /* CommentsUIComposer.swift */; };
 		D55DBA4827A3BE4700FF4540 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DBA4727A3BE4700FF4540 /* CombineHelpers.swift */; };
 		D57391FA2798DB5300262216 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57391F92798DB5300262216 /* XCTestCase+MemoryLeakTracking.swift */; };
 		D57391FC2798DBA500262216 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57391FB2798DBA500262216 /* SharedTestHelpers.swift */; };
@@ -66,6 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D51DBD6D27A79A0900CC2024 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
+		D51DBD6F27A79BBF00CC2024 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
 		D55DBA4727A3BE4700FF4540 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		D57391F92798DB5300262216 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		D57391FB2798DBA500262216 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
@@ -164,16 +168,17 @@
 			children = (
 				D57646C92797C85D001F7491 /* Info.plist */,
 				D57646BB2797C85C001F7491 /* AppDelegate.swift */,
-				D5C8CCC7279FEADF00D21313 /* LoadResourcePresentationAdapter.swift */,
+				D55DBA4727A3BE4700FF4540 /* CombineHelpers.swift */,
+				D51DBD6F27A79BBF00CC2024 /* CommentsUIComposer.swift */,
 				D5C8CCC6279FEADE00D21313 /* FeedUIComposer.swift */,
 				D5C8CCCA279FEADF00D21313 /* FeedViewAdapter.swift */,
+				D5C8CCC7279FEADF00D21313 /* LoadResourcePresentationAdapter.swift */,
 				D57646BD2797C85C001F7491 /* SceneDelegate.swift */,
 				D57646BF2797C85C001F7491 /* ViewController.swift */,
 				D5C8CCC9279FEADF00D21313 /* WeakRefVirtualProxy.swift */,
 				D57646C42797C85D001F7491 /* Assets.xcassets */,
 				D57646C62797C85D001F7491 /* LaunchScreen.storyboard */,
 				D57646C12797C85C001F7491 /* Main.storyboard */,
-				D55DBA4727A3BE4700FF4540 /* CombineHelpers.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				D5C8CCE4279FEB5D00D21313 /* FeedUIIntegrationTests.swift */,
 				D5C8CCC4279FE74400D21313 /* SceneDelegateTests.swift */,
 				D57391F82798DB4B00262216 /* Helpers */,
+				D51DBD6D27A79A0900CC2024 /* CommentsUIIntegrationTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				D57646C02797C85C001F7491 /* ViewController.swift in Sources */,
 				D55DBA4827A3BE4700FF4540 /* CombineHelpers.swift in Sources */,
 				D57646BC2797C85C001F7491 /* AppDelegate.swift in Sources */,
+				D51DBD7027A79BBF00CC2024 /* CommentsUIComposer.swift in Sources */,
 				D5C8CCCD279FEADF00D21313 /* FeedViewAdapter.swift in Sources */,
 				D57646BE2797C85C001F7491 /* SceneDelegate.swift in Sources */,
 				D5C8CCD0279FEADF00D21313 /* WeakRefVirtualProxy.swift in Sources */,
@@ -319,6 +326,7 @@
 				D5C8CCE3279FEB3200D21313 /* UIButton+TestHelpers.swift in Sources */,
 				D57391FC2798DBA500262216 /* SharedTestHelpers.swift in Sources */,
 				D5C8CCDF279FEB3200D21313 /* FeedUIIntegrationTests+Localization.swift in Sources */,
+				D51DBD6E27A79A0900CC2024 /* CommentsUIIntegrationTests.swift in Sources */,
 				D5C8CCE2279FEB3200D21313 /* UIImage+TestHelpers.swift in Sources */,
 				D5C8CCDE279FEB3200D21313 /* UIControl+TestHelpers.swift in Sources */,
 				D573920C2799363A00262216 /* XCTestCase+FeedImageDataLoader.swift in Sources */,
